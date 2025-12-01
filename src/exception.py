@@ -1,5 +1,5 @@
 import sys
-import logging
+# from src.logger import logging        (for the trial)
 
 def error_message_detail(error,error_detail:sys):   # error detail will be present in sys module
     _,_,exc_tb=error_detail.exc_info()
@@ -26,7 +26,7 @@ class CustomException(Exception):  #CustomException class inherits from Python's
         '''
         return self.error_message
 
-'''    just for trial if it works or not
+'''    just for trial if it works or not 
 if __name__=="__main__":
     try:
         a=1/0
